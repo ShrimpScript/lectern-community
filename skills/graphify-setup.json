@@ -1,0 +1,17 @@
+{
+  "name": "Set up a code graph",
+  "description": "Build a graphify code knowledge graph for the current repo.",
+  "triggers": ["graph", "graphify", "codebase", "map"],
+  "rules": [
+    "Add `graphify-out/` to .gitignore — it's a build artifact, not source.",
+    "Rebuild the graph after large refactors so symbol recall stays accurate."
+  ],
+  "steps": [
+    "Ensure graphify is installed (`pipx install graphifyy`).",
+    "From the repo root, run `graphify update .`.",
+    "Confirm `graphify-out/graph.json` was written.",
+    "In Lectern, open Brain -> Code graph and click Build/Rebuild to index it."
+  ],
+  "author": "lectern",
+  "version": 1
+}
