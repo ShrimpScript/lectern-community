@@ -1,0 +1,19 @@
+{
+  "name": "Conventional commit message",
+  "description": "Write a clear Conventional Commits message for the staged change.",
+  "triggers": ["commit", "message", "git"],
+  "rules": [
+    "Use a Conventional Commits prefix: feat, fix, docs, refactor, test, chore, etc.",
+    "Subject line in the imperative mood, <= 72 characters, no trailing period.",
+    "Explain the why in the body when the change isn't obvious."
+  ],
+  "steps": [
+    "Review the staged diff to understand the change.",
+    "Pick the type (feat/fix/docs/...) and an optional scope.",
+    "Write `type(scope): summary` as the subject line.",
+    "Add a body explaining motivation and any trade-offs.",
+    "Wrap the body at ~72 columns."
+  ],
+  "author": "lectern",
+  "version": 1
+}
