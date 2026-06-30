@@ -14,6 +14,11 @@ on:
 permissions:
   contents: write
 
+# Serialize runs so two quick merges can't race each other's index.json push.
+concurrency:
+  group: build-index
+  cancel-in-progress: false
+
 jobs:
   index:
     runs-on: ubuntu-latest
@@ -31,6 +36,8 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add index.json
             git commit -m "chore: rebuild index.json [skip ci]"
+            # Rebase onto any merge that landed during this run, then push.
+            git pull --rebase origin main
             git push
           else
             echo "index.json already up to date"
