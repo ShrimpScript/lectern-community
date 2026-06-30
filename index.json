@@ -1,9 +1,61 @@
 {
   "version": 1,
   "skills": [
-    { "id": "rust-pre-push-check", "name": "Rust pre-push check", "description": "Format, lint, and test Rust before pushing so CI stays green.", "triggers": ["rust", "cargo", "push", "commit", "ci"], "author": "lectern", "version": 1, "kind": "instruction" },
-    { "id": "conventional-commit", "name": "Conventional commit message", "description": "Write a clear Conventional Commits message for the staged change.", "triggers": ["commit", "message", "git"], "author": "lectern", "version": 1, "kind": "instruction" },
-    { "id": "graphify-setup", "name": "Set up a code graph", "description": "Build a graphify code knowledge graph for the current repo.", "triggers": ["graph", "graphify", "codebase", "map"], "author": "lectern", "version": 1, "kind": "instruction" },
-    { "id": "react-component", "name": "New React component", "description": "Add a React component that matches the project's existing conventions.", "triggers": ["react", "component", "frontend", "ui"], "author": "lectern", "version": 1, "kind": "instruction" }
+    {
+      "id": "conventional-commit",
+      "name": "Conventional commit message",
+      "description": "Write a clear Conventional Commits message for the staged change.",
+      "triggers": [
+        "commit",
+        "message",
+        "git"
+      ],
+      "author": "lectern",
+      "version": 1,
+      "kind": "instruction"
+    },
+    {
+      "id": "react-component",
+      "name": "New React component",
+      "description": "Add a React component that matches the project's existing conventions.",
+      "triggers": [
+        "react",
+        "component",
+        "frontend",
+        "ui"
+      ],
+      "author": "lectern",
+      "version": 1,
+      "kind": "instruction"
+    },
+    {
+      "id": "rust-pre-push-check",
+      "name": "Rust pre-push check",
+      "description": "Format, lint, and test Rust before pushing so CI stays green.",
+      "triggers": [
+        "rust",
+        "cargo",
+        "push",
+        "commit",
+        "ci"
+      ],
+      "author": "lectern",
+      "version": 1,
+      "kind": "instruction"
+    },
+    {
+      "id": "graphify-setup",
+      "name": "Set up a code graph",
+      "description": "Build a graphify code knowledge graph for the current repo.",
+      "triggers": [
+        "graph",
+        "graphify",
+        "codebase",
+        "map"
+      ],
+      "author": "lectern",
+      "version": 1,
+      "kind": "instruction"
+    }
   ]
 }
