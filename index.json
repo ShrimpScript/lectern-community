@@ -12,7 +12,8 @@
       ],
       "author": "lectern",
       "version": 1,
-      "kind": "instruction"
+      "kind": "instruction",
+      "sha256": "a98b74218ee3a31a5901b2c13963dee1608943c738f22884b6592dc4f7e041a8"
     },
     {
       "id": "react-component",
@@ -26,7 +27,8 @@
       ],
       "author": "lectern",
       "version": 1,
-      "kind": "instruction"
+      "kind": "instruction",
+      "sha256": "601ce0140d5a4b6cf50a2cbc420afba109f383f4684397f079e3e738d8148a3f"
     },
     {
       "id": "rust-pre-push-check",
@@ -41,7 +43,8 @@
       ],
       "author": "lectern",
       "version": 1,
-      "kind": "instruction"
+      "kind": "instruction",
+      "sha256": "1ff044acbb266db3096947889e3569114f38bd19e81709f21bd619e2c21620fb"
     },
     {
       "id": "graphify-setup",
@@ -55,7 +58,8 @@
       ],
       "author": "lectern",
       "version": 1,
-      "kind": "instruction"
+      "kind": "instruction",
+      "sha256": "e0990446ecac1a40680ed5f8654844934dfd2ca76f213826214f30d1d49d02c9"
     }
   ]
 }
